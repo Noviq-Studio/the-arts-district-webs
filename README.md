@@ -64,3 +64,15 @@ Y abrir `http://localhost:4173/` (A), `http://localhost:4173/b.html` (B) y `http
 - **Tipo de cambio.** Los euros se calculan con 1 € = 4,25 AED (`AED_PER_EUR` en `js/data.js`), un valor orientativo. Revisarlo.
 - **Rentabilidad de Madrid.** El 3 % neto de la comparativa es una estimación (`YIELD_MADRID`).
 - **Analítica y píxeles** (Google Analytics, Meta Pixel…) y aviso de cookies, si se van a usar anuncios.
+
+## Publicar en Hostinger
+
+Cada web tiene su propia rama, con `index.html` en la raíz y el SEO ya puesto. En hPanel → **Avanzado → GIT** se conecta este repositorio y se elige la rama:
+
+| Web | Rama | Google |
+|---|---|---|
+| A · Atardecer | `web-atardecer` | Se indexa (principal) |
+| B · Mañana | `web-manana` | `noindex` |
+| C · Noche | `web-noche` | `noindex` |
+
+Los pasos completos y cómo poner el dominio están en el `LEEME.md` de cada rama.
